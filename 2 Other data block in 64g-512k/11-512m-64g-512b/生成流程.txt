@@ -1,0 +1,13 @@
+﻿文件生成顺序
+
+4myclient-4disks.cpp
+生成./database/clients文件夹下的文件，并将其合成为/database下的client文件
+
+5myauditor-4disks.cpp
+读取./database/clients文件夹下的文件，分别生成./database/verifiers文件夹下的文件和./database/virifiers_r下的文件
+
+6server-4disks.cpp
+读取./database/verifiers_r下的文件，生成./database/servers下的文件
+
+通过verifier生成verifiers_sort
+通过server生成servers_sort
